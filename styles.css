@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 60vh; /* Set a fixed height */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1; /* Allow the list to grow and take up available space */
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #999;
+    background-color: #e0e0e0;
+}
+
+li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+li .edit, li .important {
+    background-color: #007bff;
+    margin-right: 10px;
+}
+
+li .edit:hover, li .important:hover {
+    background-color: #0056b3;
+}
+
+li.important-task {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.theme-dark .container {
+    background-color: rgba(50, 50, 50, 0.9);
+}
+
+.theme-dark body {
+    background-color: #333;
+    color: #fff;
+}
+.theme-dark h1 {
+    color: #fff;
+}
+
+.theme-dark li {
+    background-color: #f2f2f2;
+    border-color: #484747;
+}
+
+.theme-dark input, .theme-dark button {
+    border-color: #555;
+}
+
+.theme-dark button {
+    background-color: #007bff;
+}
+
+.theme-dark button:hover {
+    background-color: #0056b3;
+}
+.theme-dark .important-task {
+    background-color: #ff077b;
+    color: #333;
+}
